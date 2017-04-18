@@ -1,0 +1,19 @@
+[package]
+name = "whatlang-pybindings"
+version = "0.1.0"
+authors = ["Cathal Garvey <cathalgarvey@cathalgarvey.me>"]
+
+[lib]
+name = "whatlang"
+crate-type = ["cdylib"]
+
+[dependencies]
+whatlang = "0.3.1"
+
+[features]
+python27-sys = ["cpython/python27-sys"]
+python3-sys = ["cpython/python3-sys"]
+
+[dependencies.cpython]
+version = "0.1"
+default-features = false
