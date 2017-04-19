@@ -6,6 +6,7 @@ This simply wraps the [Whatlang-rs library][orig] by [Sergey Potapov][sergey],
 exposing a single function to Python which returns a tuple of (language code, script code).
 
 ## Installation
+### From Source
 You will require:
 
 * [A Rust toolchain][rust]
@@ -17,7 +18,15 @@ a system-managed Rust toolchain (e.g. `apt-get install cargo`) to permit a
 system-wide install of the library. Or, you could just use `python3 setup.py build`
 and then manually install the library system-wide.
 
-I might make a binary wheel for linux/amd64 available later on PyPI if it proves useful.
+### Linux x86-64, Python 3.5
+
+`[sudo] pip3 install https://github.com/cathalgarvey/whatlang-py/raw/master/dist/whatlang-0.0.1-cp35-cp35m-linux_x86_64.whl`
+
+or:
+
+1. Download this repository
+2. Change directory to the `dist` subdirectory
+3. `[sudo] pip3 install *.whl`
 
 ## Usage
 
