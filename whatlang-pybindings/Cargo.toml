@@ -8,7 +8,7 @@ name = "whatlang"
 crate-type = ["cdylib"]
 
 [dependencies]
-whatlang = "0.3.1"
+whatlang = "0.7.0"
 
 [features]
 python27-sys = ["cpython/python27-sys"]
